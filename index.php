@@ -1,3 +1,13 @@
 <?php
-echo '<iframe src="http://novasegurolatam.com/" height="100%" width="100%" frameborder="0" scrolling="no"></iframe>';
+// Define la URL de destino
+$url = 'http://novasegurolatam.com/';
+
+// Establece la cookie
+setcookie('redirect_url', $url, time() + 300);
+
+// Muestra un mensaje de cargando animado
+echo '<div class="cargando">Cargando...</div>';
+
+// Finaliza el script
+exit();
 ?>
